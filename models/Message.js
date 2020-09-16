@@ -10,11 +10,6 @@ const message_schema = new Schema({
         type: String,
         required: true,
     },
-    image: String,
-    password: {
-        type: String,
-        required: true
-    }
 });
 
-module.exports = mongoose.model('User', user_schema);
+module.exports = mongoose.model('Message', message_schema);
